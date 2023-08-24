@@ -10,11 +10,19 @@
     "deplay": "sh deploy.sh"
   },
   "dependencies": {
-    "vue": "^3.3.4"
+    "unplugin-auto-import": "^0.16.6",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-vue": "^9.17.0",
+    "unplugin-vue-components": "^0.25.1",
     "vite": "^4.4.5",
-    "vite-plugin-pwa": "^0.16.4"
+    "vite-plugin-pages": "^0.31.0",
+    "vite-plugin-pwa": "^0.16.4",
+    "vite-plugin-vue-layouts": "^0.8.0"
   }
 }
