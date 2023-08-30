@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import { setupLayouts } from 'virtual:generated-layouts'
-import { useRegisterSW } from 'virtual:pwa-register/vue';
+import { registerSW } from 'virtual:pwa-register'
 import generatedRoutes from '~pages'
 import './style.css'
 import App from './App.vue'
@@ -9,9 +9,9 @@ import '@/assets/rem.js'
 
 const routes = setupLayouts(generatedRoutes)
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 })
 
-useRegisterSW();
+registerSW({ immediate: true })
 createApp(App).use(router).mount('#app')

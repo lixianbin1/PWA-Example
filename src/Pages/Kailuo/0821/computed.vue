@@ -211,7 +211,6 @@ const clearBoth=()=>{
 }
 .box>p{
   flex:1;
-  text-align: left;
 }
 .box .id,.box .attribute{
   width: 0.5rem;

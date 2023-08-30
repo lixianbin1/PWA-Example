@@ -30,7 +30,11 @@ export default defineConfig({
           }
         ]
       },
-      registerType: 'autoUpdate',
+      injectRegister: 'auto', //注册服务工作进程
+      registerType: 'autoUpdate',//自动缓存
+      workbox: {                 //静态资源缓存清单
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}']
+      },
       devOptions: {
         enabled: process.env.SW_DEV === 'true',
         type: 'module',
@@ -71,7 +75,7 @@ export default defineConfig({
     Layouts(),
     vue()
   ],
-  // base: '/PWA-Example/',
+  base: '/PWA-Example/',
   server: {
     host: '0.0.0.0',
     port: '5173',

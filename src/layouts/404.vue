@@ -19,14 +19,16 @@ const router = useRouter()
 .backbutton{
   background: #545c64;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 10px;
+  font-size: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.2rem;
 }
 .animation{
   position: relative;
   text-align: center;
   width: 100%;
-  font-size: 6rem;
+  font-size: 2rem;
+  line-height: 3rem;
   font-weight: 700;
   margin: 0;
   animation: shake .6s ease-in-out infinite alternate;
@@ -37,18 +39,14 @@ const router = useRouter()
   background:#ccc;
 }
 .card_box{
-  width: 450px;
-  height: 200px;
+  width: 8rem;
+  height: 5rem;
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -100px;
-  margin-left: -225px;
-}
-.card_box h1{
-  font-size: 100px;
-  letter-spacing: 30px;
+  margin-top: -2.5rem;
+  margin-left: -4rem;
 }
 @keyframes shake {
     0%,to {
