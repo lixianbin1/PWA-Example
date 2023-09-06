@@ -1416,117 +1416,117 @@ export const Kailuo_0821=[
         min_yello:0,max_yello:0,min_black:0,max_black:0
     },
     {
-        id:156,name:'',attribute:'',shape:'',
-        hp:'',sp:'',attack:'',guard:'',speed:'',wisdom:'',
+        id:156,name:'岩魔人',attribute:'',shape:'M',
+        hp:'A',sp:'A',attack:'A',guard:'A',speed:'A',wisdom:'A',
         skill:'',skill_docs:'',
+        evolve:'167',evolveTwo:'',vestigial:'',vestigialTwo:'',
+        min_green:226,max_green:397,min_red:226,max_red:397,
+        min_blue:113,max_blue:397,min_purple:377,max_purple:500,
+        min_yello:226,max_yello:397,min_black:113,max_black:397
+    },
+    {
+        id:157,name:'炽热魔人',attribute:'火',shape:'M',
+        hp:'A',sp:'A',attack:'S',guard:'A',speed:'A',wisdom:'B',
+        skill:'水平攻击3',skill_docs:'',
+        evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
+        min_green:226,max_green:397,min_red:226,max_red:397,
+        min_blue:113,max_blue:397,min_purple:377,max_purple:500,
+        min_yello:226,max_yello:397,min_black:113,max_black:397
+    },
+    {
+        id:158,name:'棉花糖大王改',attribute:'',shape:'M',
+        hp:'A',sp:'E',attack:'A',guard:'A',speed:'S',wisdom:'A',
+        skill:'连击2',skill_docs:'',
+        evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
+        min_green:112,max_green:395,min_red:225,max_red:395,
+        min_blue:375,max_blue:500,min_purple:225,max_purple:395,
+        min_yello:112,max_yello:395,min_black:78,max_black:395
+    },
+    {
+        id:159,name:'牛楠楠改',attribute:'水',shape:'L',
+        hp:'A',sp:'A',attack:'A',guard:'S',speed:'B',wisdom:'A',
+        skill:'水平攻击3',skill_docs:'',
         evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
         min_green:0,max_green:0,min_red:0,max_red:0,
-        min_blue:0,max_blue:0,min_purple:0,max_purple:0,
+        min_blue:377,max_blue:500,min_purple:113,max_purple:397,
+        min_yello:38,max_yello:197,min_black:0,max_black:0
+    },
+    {
+        id:160,name:'大佬君改',attribute:'水',shape:'L',
+        hp:'A',sp:'A',attack:'A',guard:'A',speed:'A',wisdom:'A',
+        skill:'究极攻击3',skill_docs:'',
+        evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
+        min_green:80,max_green:395,min_red:50,max_red:395,
+        min_blue:0,max_blue:0,min_purple:50,max_purple:395,
+        min_yello:80,max_yello:395,min_black:398,max_black:500
+    },
+    {
+        id:161,name:'蛙蛙君改',attribute:'水',shape:'L',
+        hp:'A',sp:'C',attack:'B',guard:'B',speed:'B',wisdom:'S',
+        skill:'HP回复术3',skill_docs:'',
+        evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
+        min_green:0,max_green:0,min_red:39,max_red:198,
+        min_blue:81,max_blue:398,min_purple:388,max_purple:500,
+        min_yello:39,max_yello:198,min_black:0,max_black:0
+    },
+    {
+        id:162,name:'怪鸟沙沙改',attribute:'雷',shape:'L',
+        hp:'A',sp:'B',attack:'A',guard:'A',speed:'S',wisdom:'A',
+        skill:'加速之术3',skill_docs:'',
+        evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
+        min_green:0,max_green:0,min_red:0,max_red:0,
+        min_blue:383,max_blue:500,min_purple:114,max_purple:393,
+        min_yello:38,max_yello:193,min_black:0,max_black:0
+    },
+    {
+        id:163,name:'朵拉卜改',attribute:'火',shape:'L',
+        hp:'A',sp:'E',attack:'A',guard:'A',speed:'A',wisdom:'A',
+        skill:'水平攻击3',skill_docs:'',
+        evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
+        min_green:398,max_green:500,min_red:238,max_red:498,
+        min_blue:40,max_blue:198,min_purple:0,max_purple:0,
         min_yello:0,max_yello:0,min_black:0,max_black:0
     },
     {
-        id:157,name:'',attribute:'',shape:'',
-        hp:'',sp:'',attack:'',guard:'',speed:'',wisdom:'',
-        skill:'',skill_docs:'',
+        id:164,name:'风拳龙改',attribute:'木',shape:'L',
+        hp:'S',sp:'A',attack:'A',guard:'S',speed:'B',wisdom:'A',
+        skill:'究极攻击2',skill_docs:'',
         evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
-        min_green:0,max_green:0,min_red:0,max_red:0,
-        min_blue:0,max_blue:0,min_purple:0,max_purple:0,
-        min_yello:0,max_yello:0,min_black:0,max_black:0
+        min_green:39,max_green:295,min_red:57,max_red:495,
+        min_blue:57,max_blue:495,min_purple:237,max_purple:495,
+        min_yello:395,max_yello:500,min_black:57,max_black:495
     },
     {
-        id:158,name:'',attribute:'',shape:'',
-        hp:'',sp:'',attack:'',guard:'',speed:'',wisdom:'',
-        skill:'',skill_docs:'',
+        id:165,name:'歪罗王君君改',attribute:'雷',shape:'L',
+        hp:'A',sp:'S',attack:'S',guard:'A',speed:'A',wisdom:'B',
+        skill:'HP回复术3',skill_docs:'',
         evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
-        min_green:0,max_green:0,min_red:0,max_red:0,
-        min_blue:0,max_blue:0,min_purple:0,max_purple:0,
-        min_yello:0,max_yello:0,min_black:0,max_black:0
+        min_green:117,max_green:490,min_red:234,max_red:490,
+        min_blue:390,max_blue:500,min_purple:234,max_purple:490,
+        min_yello:117,max_yello:490,min_black:81,max_black:490
     },
     {
-        id:159,name:'',attribute:'',shape:'',
-        hp:'',sp:'',attack:'',guard:'',speed:'',wisdom:'',
-        skill:'',skill_docs:'',
+        id:166,name:'烤串大王改',attribute:'暗',shape:'L',
+        hp:'S',sp:'B',attack:'A',guard:'A',speed:'S',wisdom:'S',
+        skill:'究极攻击2',skill_docs:'',
         evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
-        min_green:0,max_green:0,min_red:0,max_red:0,
-        min_blue:0,max_blue:0,min_purple:0,max_purple:0,
-        min_yello:0,max_yello:0,min_black:0,max_black:0
+        min_green:85,max_green:498,min_red:59,max_red:498,
+        min_blue:0,max_blue:0,min_purple:59,max_purple:498,
+        min_yello:85,max_yello:498,min_black:408,max_black:500
     },
     {
-        id:160,name:'',attribute:'',shape:'',
-        hp:'',sp:'',attack:'',guard:'',speed:'',wisdom:'',
-        skill:'',skill_docs:'',
-        evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
-        min_green:0,max_green:0,min_red:0,max_red:0,
-        min_blue:0,max_blue:0,min_purple:0,max_purple:0,
-        min_yello:0,max_yello:0,min_black:0,max_black:0
-    },
-    {
-        id:161,name:'',attribute:'',shape:'',
-        hp:'',sp:'',attack:'',guard:'',speed:'',wisdom:'',
-        skill:'',skill_docs:'',
-        evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
-        min_green:0,max_green:0,min_red:0,max_red:0,
-        min_blue:0,max_blue:0,min_purple:0,max_purple:0,
-        min_yello:0,max_yello:0,min_black:0,max_black:0
-    },
-    {
-        id:162,name:'',attribute:'',shape:'',
-        hp:'',sp:'',attack:'',guard:'',speed:'',wisdom:'',
-        skill:'',skill_docs:'',
-        evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
-        min_green:0,max_green:0,min_red:0,max_red:0,
-        min_blue:0,max_blue:0,min_purple:0,max_purple:0,
-        min_yello:0,max_yello:0,min_black:0,max_black:0
-    },
-    {
-        id:163,name:'',attribute:'',shape:'',
-        hp:'',sp:'',attack:'',guard:'',speed:'',wisdom:'',
-        skill:'',skill_docs:'',
-        evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
-        min_green:0,max_green:0,min_red:0,max_red:0,
-        min_blue:0,max_blue:0,min_purple:0,max_purple:0,
-        min_yello:0,max_yello:0,min_black:0,max_black:0
-    },
-    {
-        id:164,name:'',attribute:'',shape:'',
-        hp:'',sp:'',attack:'',guard:'',speed:'',wisdom:'',
-        skill:'',skill_docs:'',
-        evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
-        min_green:0,max_green:0,min_red:0,max_red:0,
-        min_blue:0,max_blue:0,min_purple:0,max_purple:0,
-        min_yello:0,max_yello:0,min_black:0,max_black:0
-    },
-    {
-        id:165,name:'',attribute:'',shape:'',
-        hp:'',sp:'',attack:'',guard:'',speed:'',wisdom:'',
-        skill:'',skill_docs:'',
-        evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
-        min_green:0,max_green:0,min_red:0,max_red:0,
-        min_blue:0,max_blue:0,min_purple:0,max_purple:0,
-        min_yello:0,max_yello:0,min_black:0,max_black:0
-    },
-    {
-        id:166,name:'',attribute:'',shape:'',
-        hp:'',sp:'',attack:'',guard:'',speed:'',wisdom:'',
-        skill:'',skill_docs:'',
-        evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
-        min_green:0,max_green:0,min_red:0,max_red:0,
-        min_blue:0,max_blue:0,min_purple:0,max_purple:0,
-        min_yello:0,max_yello:0,min_black:0,max_black:0
-    },
-    {
-        id:167,name:'',attribute:'',shape:'',
-        hp:'',sp:'',attack:'',guard:'',speed:'',wisdom:'',
-        skill:'',skill_docs:'',
+        id:167,name:'欧巴太郎改',attribute:'雷',shape:'L',
+        hp:'S',sp:'B',attack:'A',guard:'A',speed:'S',wisdom:'S',
+        skill:'水平攻击3',skill_docs:'',
         evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
         min_green:242,max_green:494,min_red:242,max_red:494,
         min_blue:121,max_blue:494,min_purple:404,max_purple:500,
         min_yello:242,max_yello:494,min_black:121,max_black:494
     },
     {
-        id:168,name:'',attribute:'',shape:'',
-        hp:'',sp:'',attack:'',guard:'',speed:'',wisdom:'',
-        skill:'',skill_docs:'',
+        id:168,name:'火焱龙改',attribute:'火',shape:'L',
+        hp:'S',sp:'A',attack:'S',guard:'A',speed:'A',wisdom:'A',
+        skill:'究极攻击3',skill_docs:'',
         evolve:'',evolveTwo:'',vestigial:'',vestigialTwo:'',
         min_green:0,max_green:0,min_red:407,max_red:500,
         min_blue:244,max_blue:497,min_purple:41,max_purple:197,

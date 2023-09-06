@@ -15,7 +15,7 @@ yarn
 yarn dev
 ```
 
-### 安装PWA插件
+### 示例一：安装PWA插件
 
 ```
 yarn add vite-plugin-pwa -D
@@ -53,6 +53,6 @@ export default {
 }
 ```
 
- - 配置
+  具体配置可以自行查看代码
 
 
