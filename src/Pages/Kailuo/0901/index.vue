@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Header_0821 from '../../../components/Header_0821.vue';
 
 const router = useRouter()
 
@@ -94,7 +93,9 @@ const clearBoth=()=>{
 </script>
 
 <template>
-  <Header_0823/>
+  <Header_0821>
+    <router-link :to="{ path: '/Kailuo/0901',}">大航海探险物语（雷霆游戏）宠物孵化计算器</router-link>
+  </Header_0821>
   <div >
     <div class="box_input">
       <p class="green">绿</p>
@@ -161,7 +162,7 @@ const clearBoth=()=>{
   </div>
 </template>
 
-<style>
+<style scoped>
 .box_list{
   height: calc(100vh - 3.5rem - 2px);
   overflow: auto;

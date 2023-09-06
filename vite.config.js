@@ -9,6 +9,30 @@ import Pages from 'vite-plugin-pages'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
+  build: {
+    assetsInlineLimit:100,
+    esbuild: {
+      drop: ["console", "debugger"],
+    },
+    chunkSizeWarningLimit: 1500,
+    rollupOptions: {
+      output:{
+        compact:true,
+        manualChunks(id) {
+          if (id.includes('src')) {
+              return 'common'
+          }
+        }
+      }
+    },
+    cssCodeSplit: false,
+  },
+  resolve: {
+    alias: {
+      '~/': `${path.resolve(__dirname, 'src')}/`,
+      '@': `${path.resolve(__dirname, 'src')}/`,
+    },
+  },
   plugins: [
     VitePWA({ 
       includeAssets: ['favicon.ico', 'favicon.svg'],

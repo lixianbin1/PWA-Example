@@ -87,7 +87,7 @@ const toDetail=(id)=>{
   </div>
 </template>
 
-<style>
+<style scoped>
 .detail_list{
   height: calc(100vh - 1.1rem);
   overflow: auto;

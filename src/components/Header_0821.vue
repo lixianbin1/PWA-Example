@@ -1,5 +1,4 @@
 <script setup>
-const route = useRoute()
 const router = useRouter()
 const toBack=()=>{
   router.back()
@@ -9,7 +8,7 @@ const toBack=()=>{
 <template>
   <div class="title">
     <span class="back" @click="toBack">返回</span>
-    <router-link :to="{ path: '/Kailuo/0821',}">大航海探险物语（雷霆游戏）宠物图鉴</router-link>
+    <slot></slot>
   </div>
 </template>
 

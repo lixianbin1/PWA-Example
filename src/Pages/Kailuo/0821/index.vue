@@ -1,15 +1,7 @@
-<script setup lang="ts">
-import Header_0821 from '../../../components/Header_0821.vue';
-
-const router = useRouter()
-
-const toDetail=(item)=>{
-  router.push({path:`/Kailuo/0821/${item.id}`})
-}
-</script>
-
 <template>
-  <Header_0821/>
+  <Header_0821>
+    <router-link :to="{ path: '/Kailuo/0821',}">大航海探险物语（雷霆游戏）宠物图鉴</router-link>
+  </Header_0821>
   <div class="box">
     <p class="id">ID</p>
     <p>名称</p>
@@ -28,7 +20,7 @@ const toDetail=(item)=>{
   </div>
 </template>
 
-<style>
+<style scoped>
 .box_list{
   height: calc(100vh - 1.7rem - 2px);
   overflow: auto;

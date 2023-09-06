@@ -13,5 +13,9 @@ const router = createRouter({
   routes,
 })
 
-registerSW({ immediate: true })
+registerSW({ 
+  immediate: true,
+  onOfflineReady() {
+  },
+})
 createApp(App).use(router).mount('#app')
