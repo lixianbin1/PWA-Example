@@ -129,32 +129,32 @@ const clearBoth=()=>{
     <div class="box" v-for="item in FilterArr.value" @click="toDetail(item)">
       <p class="id">{{item.id}}</p>
       <p>{{item.name}}</p>
-      <div class="attribute" v-if="item.min_green !== item.max_green">
+      <div class="attribute green" v-if="item.min_green !== item.max_green">
         <p>{{item.min_green}} - {{item.max_green}}</p>
       </div>
       <p class="attribute" v-else>--</p>
 
-      <div class="attribute" v-if="item.min_red !== item.max_red">
+      <div class="attribute red" v-if="item.min_red !== item.max_red">
         <p>{{item.min_red}} - {{item.max_red}}</p>
       </div>
       <p class="attribute" v-else>--</p>
 
-      <div class="attribute" v-if="item.min_blue !== item.max_blue">
+      <div class="attribute blue" v-if="item.min_blue !== item.max_blue">
         <p>{{item.min_blue}} - {{item.max_blue}}</p>
       </div>
       <p class="attribute" v-else>--</p>
 
-      <div class="attribute" v-if="item.min_purple !== item.max_purple">
+      <div class="attribute purple" v-if="item.min_purple !== item.max_purple">
         <p>{{item.min_purple}} - {{item.max_purple}}</p>
       </div>
       <p class="attribute" v-else>--</p>
 
-      <div class="attribute" v-if="item.min_yello !== item.max_yello">
+      <div class="attribute yellow" v-if="item.min_yello !== item.max_yello">
         <p>{{item.min_yello}} - {{item.max_yello}}</p>
       </div>
       <p class="attribute" v-else>--</p>
 
-      <div class="attribute" v-if="item.min_black !== item.max_black">
+      <div class="attribute black" v-if="item.min_black !== item.max_black">
         <p>{{item.min_black}} - {{item.max_black}}</p>
       </div>
       <p class="attribute" v-else>--</p>
@@ -212,6 +212,7 @@ const clearBoth=()=>{
 }
 .box>p{
   flex:1;
+  text-align: left;
 }
 .box .id,.box .attribute{
   width: 0.5rem;
@@ -221,6 +222,30 @@ const clearBoth=()=>{
 .box .attribute{
   width: 0.9rem;
   text-align: center;
+}
+.green>p{
+  background: #129b12;
+  color: #fff;
+}
+.red>p{
+  background: #c61313;
+  color: #fff;
+}
+.blue>p{
+  background: #4141ad;
+  color: #fff;
+}
+.purple>p{
+  background: #8e398e;
+  color: #fff;
+}
+.yellow>p{
+  background: #bfbf1df0;
+  color: #fff;
+}
+.black>p{
+  background: #505050;
+  color: #fff;
 }
 </style>
 

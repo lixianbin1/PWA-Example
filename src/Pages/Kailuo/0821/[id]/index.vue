@@ -68,7 +68,7 @@ const toDetail=(id)=>{
       <h3 class="detail_h3">进化树</h3>
       <div class="detail_box flex_end">
         <div class="iocn_box" @click="toDetail(detail.value.vestigial)">
-          <p>{{detail.value.vestigia?Kailuo_0821[detail.value.vestigial - 1].name:'无'}}</p>
+          <p>{{detail.value.vestigial?Kailuo_0821[detail.value.vestigial - 1].name:'无'}}</p>
         </div>
         <div class="iocn_box" @click="toDetail(detail.value.vestigialTwo)">
           <p>{{detail.value.vestigialTwo?Kailuo_0821[detail.value.vestigialTwo - 1].name:'无'}}</p>
