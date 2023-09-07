@@ -53,6 +53,39 @@ export default {
 }
 ```
 
-  具体配置可以自行查看代码
+### 配置
+
+#### 注册服务
+
+```js
+// vite.config.js / vite.config.ts
+
+import { VitePWA } from 'vite-plugin-pwa'
+
+export default {
+  plugins: [
+    VitePWA({
+      injectRegister: 'auto', //自动注册服务工作进程
+    })
+  ]
+}
+```
+
+手动注册服务工作进程
+
+```js
+// main.js
+
+import { registerSW } from 'virtual:pwa-register'
+
+registerSW({
+  // 每小时检查一次
+  onRegistered: r => r && setInterval(async () => await r.update(), 3600000),
+  // 注册失败则报错到 console
+  onRegisterError: error => console.error(error)
+})
+```
+
+  具体相关配置可以自行查看代码
 
 

@@ -15,7 +15,8 @@ const router = createRouter({
 
 registerSW({ 
   immediate: true,
-  onOfflineReady() {
-  },
+  onOfflineReady:(e)=>{console.log(e,'onOfflineReady')},
+  onNeedRefresh:(e)=>{console.log(e,'onNeedRefresh')},
+  onRegistered:(e)=>{console.log(e,'onRegistered')},
 })
 createApp(App).use(router).mount('#app')

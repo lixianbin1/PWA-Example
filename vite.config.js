@@ -27,12 +27,6 @@ export default defineConfig({
     },
     cssCodeSplit: false,
   },
-  resolve: {
-    alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
-      '@': `${path.resolve(__dirname, 'src')}/`,
-    },
-  },
   plugins: [
     VitePWA({ 
       includeAssets: ['favicon.ico', 'favicon.svg'],

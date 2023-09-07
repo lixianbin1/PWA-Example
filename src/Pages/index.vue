@@ -1,10 +1,11 @@
 <template>
   <div class="ul">
-    <div class="li">
-      <router-link :to="{ path: '/Kailuo',}">
-        开罗
-      </router-link>
-    </div>
+    <router-link class="li" :to="{ path: '/Kailuo',}">
+      开罗
+    </router-link>
+    <router-link class="li" :to="{ path: '/Qiutu',}">
+      囚徒健身
+    </router-link>
   </div>
 </template>
 
