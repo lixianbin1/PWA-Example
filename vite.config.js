@@ -8,6 +8,40 @@ import Layouts from 'vite-plugin-vue-layouts'
 import Pages from 'vite-plugin-pages'
 import vue from '@vitejs/plugin-vue'
 
+//PWA配置
+const pwaOptions = {
+  includeAssets: ['favicon.ico', 'favicon.svg'],
+  manifest: {
+    name: 'PWA-Example',
+    short_name: 'Example',
+    description: '一个PWA的测试用例',
+    theme_color: '#ffffff',
+    icons: [
+      {
+        src: 'pwa-192x192.png',
+        sizes: '192x192',
+        type: 'image/png'
+      },
+      {
+        src: 'pwa-512x512.png',
+        sizes: '512x512',
+        type: 'image/png'
+      }
+    ]
+  },
+  injectRegister: 'script', //注册服务工作进程
+  registerType: 'autoUpdate',//自动缓存
+  workbox: {                 //静态资源缓存清单
+    globPatterns: ['**/*.{js,css,html,ico,png,svg}']
+  },
+  devOptions: {
+    enabled: true,
+    type: 'module',
+    navigateFallback: 'index.html',
+    suppressWarnings: true,
+  },
+}
+console.log(process)
 export default defineConfig({
   build: {
     assetsInlineLimit:100,
@@ -28,38 +62,7 @@ export default defineConfig({
     cssCodeSplit: false,
   },
   plugins: [
-    VitePWA({ 
-      includeAssets: ['favicon.ico', 'favicon.svg'],
-      manifest: {
-        name: 'PWA-Example',
-        short_name: 'Example',
-        description: '一个PWA的测试用例',
-        theme_color: '#ffffff',
-        icons: [
-          {
-            src: 'pwa-192x192.png',
-            sizes: '192x192',
-            type: 'image/png'
-          },
-          {
-            src: 'pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png'
-          }
-        ]
-      },
-      injectRegister: 'auto', //注册服务工作进程
-      registerType: 'autoUpdate',//自动缓存
-      workbox: {                 //静态资源缓存清单
-        globPatterns: ['**/*.{js,css,html,ico,png,svg}']
-      },
-      devOptions: {
-        enabled: process.env.SW_DEV === 'true',
-        type: 'module',
-        navigateFallback: 'index.html',
-        suppressWarnings: true,
-      },
-    }),
+    VitePWA(pwaOptions),
     AutoImport({
       imports: [ // 自动导入模块
         'vue',

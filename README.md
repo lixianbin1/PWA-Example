@@ -86,6 +86,53 @@ registerSW({
 })
 ```
 
+#### 调试
+
+```js
+//vite.config.js
+
+//PWA配置
+const pwaOptions = {
+  //......
+  devOptions: {
+    enabled: true,
+    type: 'module',
+    navigateFallback: 'index.html',
+    suppressWarnings: true,
+  },
+}
+export default defineConfig({
+  plugins: [
+    VitePWA(pwaOptions),
+    //......
+  ]
+  //.....
+})
+```
+
+```js
+// main.js
+
+import { registerSW } from 'virtual:pwa-register'
+registerSW({ 
+  immediate: true,
+  //脱机离线
+  onOfflineReady:(e)=>{
+    console.log(e,'脱机离线')
+  },
+
+  //更新服务
+  onNeedRefresh:(e)=>{
+    console.log(e,'更新服务')
+  },
+
+  //注册服务
+  onRegistered:(e)=>{
+    console.log(e,'注册服务')
+  },
+})
+```
+
   具体相关配置可以自行查看代码
 
 

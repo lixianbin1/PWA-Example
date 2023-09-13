@@ -15,8 +15,19 @@ const router = createRouter({
 
 registerSW({ 
   immediate: true,
-  onOfflineReady:(e)=>{console.log(e,'onOfflineReady')},
-  onNeedRefresh:(e)=>{console.log(e,'onNeedRefresh')},
-  onRegistered:(e)=>{console.log(e,'onRegistered')},
+  //脱机离线
+  onOfflineReady:(e)=>{
+    console.log(e,'脱机离线')
+  },
+
+  //更新服务
+  onNeedRefresh:(e)=>{
+    console.log(e,'更新服务')
+  },
+
+  //注册服务
+  onRegistered:(e)=>{
+    console.log(e,'注册服务')
+  },
 })
 createApp(App).use(router).mount('#app')
