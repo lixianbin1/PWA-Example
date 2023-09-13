@@ -14,7 +14,9 @@ const router = createRouter({
 })
 
 registerSW({ 
+  //自动重载
   immediate: true,
+
   //脱机离线
   onOfflineReady:(e)=>{
     console.log(e,'脱机离线')

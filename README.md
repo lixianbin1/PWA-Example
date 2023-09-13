@@ -114,8 +114,10 @@ export default defineConfig({
 // main.js
 
 import { registerSW } from 'virtual:pwa-register'
-registerSW({ 
+registerSW({
+  //自动重载:在下次进入的时候重新加载 
   immediate: true,
+
   //脱机离线
   onOfflineReady:(e)=>{
     console.log(e,'脱机离线')
