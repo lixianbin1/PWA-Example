@@ -1,14 +1,57 @@
 # PWA-Example
 
-## 项目介绍
+一个通过 [vite-plugin-pwa](https://github.com/vite-pwa/vite-plugin-pwa) 在 vue 项目中进行 PWA 功能开发的示例项目，用于深入体验 PWA。
 
-一个应用于 PWA 的 vue 示例代码，用于深入体验 PWA。
+## 目录 
 
- - [vite-plugin-pwa](https://github.com/vite-pwa/vite-plugin-pwa) 针对 Vite 和生态系统的 PWA 集成,零配置和框架无关.适用于 Vite 的 PWA 插件.
+ - [项目目录](#mulu)
+ - [项目指令](#zhilin)
+ - [项目构建](#goujian)
+ - [更新日志](#rizhi)
+ - [故障排除](#guzan)
 
-## 项目开始
+<span id="mulu"></span>
 
+## 项目目录
+
+ - `dev-dist/` (自动生成的PWA.js文件)
+ - `public/` (公共资源)
+ - `src/` (Vue默认的src路径文件)
+    - `App.vue` (最初渲染入口)
+ - `main.js` ( 入口文件：Electron的入口文件,用来创建Electron应用 )
+ - `deploy.sh` (deploy的sh脚本:进行GitHub的page部署)
+ - `index.html` （初始html: 最初的index渲染页面）
+ - `serve.js` （简易的Node服务器脚本）
+ - `vite.config.js` （Vite配置文件）
+
+<span id="zhilin"></span>
+
+## 项目指令
+
+```bash
+# 初始化安装
+yarn install
+
+# 启动项目
+yarn dev
+
+# 打包项目
+yarn build
+
+# 预览打包后的dist目录效果
+yarn preview
+
+# 部署命令（注意：需要重新配置为自己的部署page）
+yarn deploy
 ```
+
+<span id="goujian"></span>
+
+## 项目构建
+
+以下是项目的构建过程，不需要进行执行，仅用于参考。
+
+```bash
 yarn create vite pwa-example --template vue
 cd pwa-example
 yarn
@@ -134,12 +177,17 @@ registerSW({
   },
 })
 ```
+具体相关配置可以自行查看代码
 
-  具体相关配置可以自行查看代码
+<span id="rizhi"/>
 
-### 更新日志
+## 更新日志
 
-#### v1.0.0-test
+### v1.0.0-test
 
 1:简单的完善PWA的基础功能。目前测试page可以安装PWA，且会缓存文件，可在离线时使用。并在下次更新后可以刷新代码。
 
+
+<span id="guzan"/>
+
+## 故障排查
